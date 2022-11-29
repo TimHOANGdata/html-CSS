@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Horaire de cours</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Accueil</a> |
+        <a href="about.html">A propos</a> |
+        <a href="schedule.html">Horaire des cours</a>
+        <!-- ../ is used to return to outside folder-->
+    </nav>
+
+    <!-----------------insert table-------------------------------------->
+    <table border="1">
+        <!-- Lables en tête du tableau-->
+        <thead>
+            <tr>
+                <th>heures</th>
+                <th>Jours</th>
+                <th>Cours</th>
+            </tr>
+        </thead>
+
+        <!---donnees => corps du tableau-->
+        <tbody>
+            <tr>
+                <td>9h-17h</td>
+                <td>lundi</td>
+                <td>POO Java</td>
+            </tr>
+            <tr>
+                <td>13-17h</td>
+                <td>Mardi</td>
+                <td>Bases de Données</td>
+            </tr>
+            <tr>
+                <td>10h-14h</td>
+                <td>Mercredi</td>
+                <td>Angular</td>
+            </tr>
+            <tr>
+                <td>12h-16h</td>
+                <td>Jeudi</td>
+                <td>Jakarta EE</td>
+            </tr>
+            <tr>
+                <td>6h-21h</td>
+                <td>Vendredi</td>
+                <td>Spring Boot</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--<table></table> : creer un tableau-->
+    <!--<tr></tr> : creer une ligne-->
+    <!--<td></td> : creer une colonne-->
+    <!--<th></th> : creer colonne en bold - decoration -->
+    <!--si on veut creer 3 colonne , td*3 enter pour generer 3 colonne rapid-->
+    <!-- thead et tbody permet de donner la propriete semantique - tête et body du tableau-->
+</body>
+</html>
