@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>A propos</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <nav>
+        <a href="../index.html">Accueil</a> |
+        <a href="about.html">A propos</a> |
+        <a href="schedule.html">Horaire des cours</a> |
+        <a href="register.html">Register</a>
+        <!-- ../ is used to return to outside folder-->
+    </nav>
+    <!-- Informations a stocker
+        -nom
+        -prenom
+        -email
+        -numero de telephone
+        -biographique
+        -pays
+    -->
+    <form>
+        <div>
+            <label for="nom">Nom: </label> 
+            <input type="text" id="nom"/>
+        </div>
+    <!-- for and id permet d'activer l'input si on clique sur le text-->
+        <div>
+            <label for="prenom">Prenom: </label>
+            <input type="text" id="prenom"/>
+        </div>
+        <div>
+            <label for="email">Email: </label> 
+            <input type="text" id="email"/>
+        </div>
+        <div>
+            <label>Gerne: </label> 
+            <input value ="f" type="radio" name="gerne"/> Feminin
+            <input value ="m" type="radio" name="gerne"/> Masculin
+        </div>
+        <!-- type radio permet de choisir, et value et le valeur retour si on choit cette choix-->
+        <!--name="gerne" permet de force choisir 1 des 2, peut pas choisir 2 en meme temps-->
+        <div>
+            <label for="phone">Telephone: </label> 
+            <input type="text" id="phone" placeholder="Ex: +33xxxxxxxxx"/>
+        </div>
+        <!--placeholder: permet de donner un valeur exemple-->
+        <div>
+            <label for="bio">Bio: </label> 
+            <textarea maxlength =3 rows=4 cols=40 id="bio"></textarea>
+        </div>
+        <!--textarea: creer un zone pour entrer une longue text-->
+        <!--maxlength pour limiter le nombre de character d'input-->
+        <!-- rows and cols: definir la taille de la zone-->
+        <div>
+            <label for="pays">Pays: </label>
+            <select id="pays">
+                <option>-- choisissez un pays --</option>
+                <option value="it">Italy</option>
+                <option value="fr">France</option>
+                <option value="vn">Vietnam</option>
+                <option value="cn">Chine</option>
+                <option value="be">Belgique</option>
+                <option value="jp">Japon</option>
+            </select>        
+        </div>
+        <!-- creer list des option, value: donnees qu'on va enregistrer-->
+            <input type="submit" value="valider"/>
+       
+    </form>
+    <!-- <form></form>: creer une formulaire
+        input : creer un champ pour entrer les donnees
+        les label et input sont  des content enline => faut sauter la ligne
+        il y different fason pour sauter: 
+            - consider les 2 contenus comme paragraphe avec <p></p>
+            - <div></div> permet de considerer les contenu comme un block => decouper
+                le page en blocks
+            -
+    -->
+   
+    <h1>S'inscire</h1>
+  </body>
+</html>
