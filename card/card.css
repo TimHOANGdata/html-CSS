@@ -1,0 +1,46 @@
+.card{
+    background-color:#254D32;
+    height:420px;
+    width:300px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow:#254D32 0px 20px 100px 10px;
+   }
+  .card_image{
+    background-color:#254D32;
+    height:100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+  }
+  .titre{
+    background-color: #3A7D44;
+    color : white;
+    border-radius: 10px;
+    width: 100px;
+    height:50px;
+    position: relative;
+    
+  }
+  .description{
+    background-color: #69B578;
+    color :white;
+    border-radius: 10px;
+    width: 100px;
+    height:50px;
+  
+  }
+  .price{
+    background-color:#D0DB97;
+    border-radius: 10px;
+    color:white;
+    width: 100px;
+    height:50px;
+    position: relative;
+  }
+  .card:hover{
+    background-color:#816E94;
+    cursor:pointer;
+    box-shadow:#816E94  0px 30px 100px 10px;
+  }
+  

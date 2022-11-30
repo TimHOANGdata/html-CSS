@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Histoire d'internet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TP.css"/>
 </head>
 <body>
-    <h1>Page 1: Histoire d'internet</h1>
+    <h1>Histoire d'internet</h1>
     <p>L’<strong>histoire d'Internet</strong> remonte au développement des premiers réseaux de télécommunication.
         L’idée d’un réseau informatique, permettant aux utilisateurs de différents ordinateurs de
         communiquer, se développa par de nombreuses étapes successives. La somme de tous ces
@@ -16,7 +20,7 @@
     
     <p>Deux phases d'accélérations se produisirent : à la fin des années 1960-1970, l’application
 pratique des concepts évoqués à la fin des années 1950 et ensuite, dans les années 1990,
-lorsque la popularisation des fondements de l’Internet moderne passa par l’apparition du <a href="WorldWideWeb.html">World Wide Web</a>
+lorsque la popularisation des fondements de l’Internet moderne passa par l’apparition du <a id="www" href="WorldWideWeb.html">World Wide Web</a>
     </p>
 
     <p>
@@ -29,7 +33,7 @@ lorsque la popularisation des fondements de l’Internet moderne passa par l’a
     </p>
 
     <h2>Chronologie sélective</h2>
-    <table border = "1">
+    <table cellspacing="0",cellpadding="0">
         <thead>
             <tr>
                 <th>Année</th>
@@ -172,14 +176,18 @@ lorsque la popularisation des fondements de l’Internet moderne passa par l’a
         </tbody>
     </table>
     <br>
+    <figure>
+    <div class="image_box">
     <img 
     src="Copie de web-server.jpg" 
     alt ="Copie de web-server"
     width = "1000"
-    />
+    >
+</div>
     <figcaption>Fig.1 - Le premier serveur web, actuellement au musée du CERN, étiqueté « This machine is a
         server. DO NOT POWER IT DOWN!! »</figcaption>
-
+    
+    </figure>
     <h2>Protocole TCP/IP</h2>
    <p>L'abondante diversité des méthodes de communications réseau amena un besoin
     d'uniformisation. Robert E. Kahn recruta Vinton G. Cerf de l'université Stanford dans le but de
@@ -189,7 +197,8 @@ lorsque la popularisation des fondements de l’Internet moderne passa par l’a
     avec l'ARPANET, les hôtes en étaient maintenant responsables. Vinton G. Cerf attribua à
     Hubert Zimmermann et Louis Pouzin (développeurs du réseau Cyclades) un important travail de
     développement.</p>
-    <p>Avec le rôle du réseau physique réduit à son strict minimum, il devint alors possible de
+    <div class="para_in_box">
+    <p >Avec le rôle du réseau physique réduit à son strict minimum, il devint alors possible de
         fusionner à peu près tout type de réseau sans tenir compte de leurs caractéristiques et ainsi
         résoudre le problème que s'était posé Robert E. Kahn à ses débuts. La DARPA accepta de
         financer le développement du logiciel prototype, et après plusieurs années de travail, la
@@ -198,5 +207,6 @@ lorsque la popularisation des fondements de l’Internet moderne passa par l’a
         janvier 1983
         les protocoles TCP/IP devenaient officiellement le seul protocole sur l'ARPANET, remplaçant le
         précédent protocole NCP2.</p>
+    </div>
 </body>
 </html>
